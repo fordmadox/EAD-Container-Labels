@@ -96,7 +96,7 @@ to fix / look into:
                         else $firstFolderString"/>
                 <xsl:variable name="last-folder"
                     select="if (contains($lastFolderString, '-'))
-                        then substring-before($lastFolderString, '-')
+                        then substring-after($lastFolderString, '-')
                         else $lastFolderString"/>
 
                 <xsl:variable name="sequence-of-series"
